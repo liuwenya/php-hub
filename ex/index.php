@@ -3,7 +3,7 @@ include_once('../dom/simple_html_dom.php');
 include_once('../dom/cls_page.php');
 include_once('./imgcache.php');
 
-
+//test 4 github
 $u = 'http://www.aili.com/akoy/phxgmt/index.html#one';
 $pg = 1;
 $epg = 50;
