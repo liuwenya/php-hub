@@ -1,7 +1,10 @@
 <link type="text/css" media="all" rel="stylesheet" href="css/all.css?v=10.71.1" ></link>
 <link type="text/css" media="all" rel="stylesheet" href="form.css?v=10.71.1"  ></link>
 
-<head><title><?php echo $title ?></title></head>
+<head>
+<title><?php echo $title ?></title>
+<script type="text/javascript" src="js/jquery-1.5.1.min.js?v=10.71.1"></script>
+</head>
 
 <div class="wrapper">
 <div class="header">

@@ -1,6 +1,6 @@
 ﻿<?php
 include_once('../dom/simple_html_dom.php');
-include_once('../dom/cls_page.php');
+include_once('./imgcache.php');
 
 $uh = 'http://www.nuvid.com/';
 $up = '';
@@ -53,7 +53,7 @@ foreach($html->find('div[class=block-tumb]',0)->find('div') as $belement){
 			.' title="'.$title
 			.'" class=video-thumb>';
 
-		echo '<img src="'.$src
+		echo '<img src="'.getimg($src)
 			.'" '
 			.' title="'
 			.$title

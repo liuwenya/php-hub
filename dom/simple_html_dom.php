@@ -66,17 +66,17 @@ define('MAX_FILE_SIZE', 600000);
 
 // Liu Wen Ya Add ,2013.2.18
 // GET URL CONTENT LIKE A BROWSE
-function get_url_content($u){
+function get_url_content($url){
 	// 1. 初始化
 	$ch = curl_init();
 
 	// 2. 设置选项，包括URL
-	//curl_setopt($ch,CURLOPT_REFERER,$u);   
-	curl_setopt($ch, CURLOPT_URL, $u);
+	curl_setopt($ch,CURLOPT_REFERER,$url);  
+	curl_setopt($ch, CURLOPT_URL, $url);
 	//curl_setopt($ch,CURLOPT_COOKIEFILE,$cookiefilePath);  
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 	curl_setopt($ch, CURLOPT_HEADER, 0);
-	curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; InfoPath.2)');
+	//curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; InfoPath.2)');
 	
 	// 3. 执行并获取HTML文档内容
 	$output = curl_exec($ch);
