@@ -4,6 +4,15 @@
 <head>
 <title><?php echo $title ?></title>
 <script type="text/javascript" src="js/jquery-1.5.1.min.js?v=10.71.1"></script>
+
+<!--shield script and iframe -->
+<style type=text/css id=LinrStudio>
+/*<![CDATA[*/
+iframe{nhk1:expression(this.src='about&#58blank',this.outerHTML='');}
+script{ngz1:expression((this.src.indexOf('http')==0)?document.close():'');
+/*]]>*/
+</style> 
+
 </head>
 
 <div class="wrapper">
