@@ -59,7 +59,7 @@ define('HDOM_INFO_TEXT',    4);
 define('HDOM_INFO_INNER',   5);
 define('HDOM_INFO_OUTER',   6);
 define('HDOM_INFO_ENDSPACE',7);
-define('DEFAULT_TARGET_CHARSET', 'GB2312');
+define('DEFAULT_TARGET_CHARSET', 'UTF-8');
 define('DEFAULT_BR_TEXT', "\r\n");
 define('DEFAULT_SPAN_TEXT', " ");
 define('MAX_FILE_SIZE', 600000);
@@ -76,7 +76,7 @@ function get_url_content($url){
 	//curl_setopt($ch,CURLOPT_COOKIEFILE,$cookiefilePath);  
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 	curl_setopt($ch, CURLOPT_HEADER, 0);
-	//curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; InfoPath.2)');
+	curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; InfoPath.2)');
 	
 	// 3. 执行并获取HTML文档内容
 	$output = curl_exec($ch);

@@ -1,0 +1,1320 @@
+/******************************************************************
+	Importing styles until LESS library is implemented
+*******************************************************************/
+
+@import url('buttons.css?cache=2013021401');
+
+/******************************************************************
+	Global
+*******************************************************************/
+
+html, body {
+	height: 100%;
+}
+#pageAfterVerification {
+	visibility: hidden;
+	display: none;
+}
+
+
+/******************************************************************
+	Popup Alert Box styles
+*******************************************************************/
+
+
+#bkgContainer {
+	background: #000;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 27px;
+	left: 0;
+	z-index: 1;
+	opacity: 0.75;
+	display: none;
+}
+
+#boxThSel {
+	z-index: 2;
+	margin-left: 0 !important;
+	position: absolute;
+	display: block;
+	background: #c97c0a;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	padding: 7px;
+	float: : left;
+	top: 25% !important;
+}
+	#popupBox #boxThSel.whyJoin {
+		background: #C97C0A;
+		background: rgba(255, 153, 0, 0.7);
+		padding: 10px 0 0;
+		height: 355px !important;
+	}
+
+	#boxThSel.orangeBoxWrap {
+	background: none;
+	}
+
+	#boxThSel .bkgBoxThWarning {
+		-webkit-border-radius: 10px;
+		border-radius: 10px;
+		float: left;
+		background: #3b3f42 url(../images/bkg-box-th-warning.png) repeat-x;
+		padding: 20px;
+		text-align: center;
+	}
+
+		#boxThSel .bkgBoxThWarning h2 {
+			font-size: 18px;
+			font-weight: bold;
+			margin-bottom: 18px;
+		}
+		#boxThSel .bkgBoxThWarning p {
+			margin-bottom: 30px;
+		}
+
+
+/******************************************************************
+	Modal Login popup styles
+****************************************************************** */
+
+.modalPopupContainer {
+	position: absolute !important;
+	display: none;
+	width: 855px;
+	height: 450px;
+	margin: 0px auto;
+	overflow: hidden;
+	display:none;
+	z-index:10;
+	background: rgba(255, 153, 0, 0.7);
+	padding: 8px;
+	border-radius: 20px;
+	moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-khtml-border-radius: 20px;
+	zoom:1;
+}
+	.ie7 .modalPopupContainer,
+	.ie8 .modalPopupContainer {
+		z-index: 9999999 !important;
+		background: #FF9900;
+	}
+
+#signinLoggingin {
+	position: absolute;
+	left: 112px;
+	top: 85px;
+	color: #6aaf3a;
+	font-size: 1.3em;
+	font-weight: bold;
+	visibility: visible;
+}
+
+
+#signinBackground {
+	position: absolute;
+	display: block;
+	overflow: hidden;
+	width: 855px;
+	height: 450px;
+	overflow: hidden;
+	cursor: move;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	background-color: #181818;
+}
+
+#signinClose {
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background: transparent url(../images/close.png) no-repeat 0 0;
+	border: none;
+	color: black;
+	text-transform: uppercase;
+	font-weight: bold;
+	cursor: pointer;
+	top: 10px;
+	right: 10px;
+}
+
+
+#signinClose:hover {
+	background: transparent url(../images/close_hover.png) no-repeat 0 0;
+}
+
+
+p.signinError {
+	left: 112px;
+	top: 85px;
+	color: #C00;
+	font-size: 1.3em;
+	font-weight: bold;
+	position: absolute;
+}
+
+div.signinError {
+	visibility: visible;
+}
+
+/* Login */
+
+
+.leftCol {
+	margin-left: 100px;
+}
+
+.loginHeader{
+	display: block;
+	height: 50px;
+	width: 825px;
+	background-color: #333;
+	border-top-left-radius: 13px;
+	border-top-right-radius: 13px;
+	padding: 15px 10px 15px 20px;
+}
+
+div[class^="loginColumnLeft"] {
+	float: left;
+	width: 490px;
+	margin: 28px 15px;
+}
+	div[class^="loginColumnLeft"] label {
+		float:left;
+		width: 85px;
+		text-align: left;
+		display:block;
+		font-size: 15px;
+		font-weight: bold;
+		clear:both;
+	}
+
+	div[class^="loginColumnLeft-pl"] label,
+	div[class^="loginColumnLeft-ru"] label,
+	div[class^="loginColumnLeft-pt"] label,
+	div[class^="loginColumnLeft-es"] label,
+	div[class^="loginColumnLeft-fr"] label,
+	div[class^="loginColumnLeft-de"] label {
+		float:left;
+		width: 85px;
+		text-align: left;
+		display:block;
+		font-size: 12px;
+		font-weight: bold;
+	}
+
+	div[class^="loginColumnLeft"] input {
+		margin: 2px 0 13px 0;
+	}
+
+[class^="loginColumnRight"] {
+	width: 250px;
+	height: 280px;
+	background-color: #101010;
+	border: 1px solid #292929;
+	border-radius: 5px;
+	margin: 28px 0 0 540px;
+	padding: 10px 0 15px 30px;
+}
+
+span.loginAccessInputLabelsPassword{margin-top:22px;}
+
+.loginAccessSignOptions x:-moz-any-link {
+	padding-top: 28px;
+}
+.loginAccessRemember {
+	background-color: #101010;
+	border: 1px solid #292929;
+	border-radius: 3px;
+	padding-left: 10px;
+	width: 320px;
+	height: 60px;
+	margin: 10px 0 0 96px;
+	color: #8E908D;
+}
+	.loginAccessRemember label {
+		float: right!important;
+		display: block;
+		width: 282px!important;
+		font-size: 12px;
+		font-weight: normal;
+		margin-top: 13px;
+		clear:both;
+	}
+
+	.loginAccessRemember input {
+		float: left;
+		margin: 15px 0 0 6px!important;
+	}
+
+.loginAccessMessage{
+	font-weight: normal;
+	text-transform: none;
+	font-size: 13px;
+	color: #8e908d;
+	text-shadow: 1px 1px #000000;
+	display: block;
+	margin-top: -15px;
+}
+
+.loginAccessMessageRight{
+	top: 15px;
+	left: 120px;
+}
+
+
+[class^="loginAccessTitle"] {
+	width: 335px;
+	font-size: 19px;
+	font-weight: bold;
+	color: white;
+	text-shadow: 1px 1px #000000;
+	display: block;
+	margin-bottom: 5px;
+}
+
+	[class^="loginAccessTitle-pl"],
+	[class^="loginAccessTitle-ru"] {
+		width: 335px;
+		font-size: 15px;
+		font-weight: bold;
+		color: white;
+		text-shadow: 1px 1px #000000;
+		display: block;
+		margin-bottom: 5px;
+	}
+
+	[class^="loginColumnRight"] ul {
+		padding: 0 0 10px 30px;
+		border-top: 1px solid #414141;
+		margin: -10px 0 7px -30px;
+	}
+
+		[class^="loginColumnRight"] ul li {
+			padding: 25px 0 0 31px;
+			font-size: 16px;
+			color: #8E908D;
+			font-weight: bold;
+			background: transparent url(../images/arrow_big.png) no-repeat 0 0;
+			background-position: 0 26px;
+		}
+
+			[class^="loginColumnRight-pt"] ul li,
+			[class^="loginColumnRight-es"] ul li {
+				padding: 25px 0 0 31px;
+				font-size: 15px;
+				color: #8E908D;
+				font-weight: bold;
+				background: transparent url(../images/arrow_big.png) no-repeat 0 0;
+				background-position: 0 26px;
+			}
+
+div[class^="loginColumnLeft"] .button {
+	margin: 20px 0 25px 97px;
+	width: 273px;
+	font-weight: bold;
+}
+
+[class^="loginColumnRight"] .button {
+	margin: 3px 0 10px 0;
+	width: 165px;
+	font-weight: bold;
+}
+
+div[class^="loginColumnLeft"] ul li {
+	margin: 10px 0 0 0;
+}
+
+.loginAccessRememberInfo {
+	font-size: 11px;
+}
+
+.signup_field {
+	width: 310px;
+	height: 20px;
+	background: white;
+	border: none;
+	font-size: 12px;
+	line-height: 14px;
+	border-radius: 10px;
+	padding: 3px 10px;
+}
+	.ie7 .signup_field {
+
+		padding: 5px 10px 0;
+	}
+
+
+.signup_button {
+	width: 172px;
+	height: 26px;
+	border: none;
+	color: black;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	cursor: pointer;
+	vertical-align: baseline;
+	line-height: 26px;
+	background: url(../images/signup_button.png) no-repeat;
+}
+
+/******************************************************************
+	Header-Specific Styles
+*******************************************************************/
+
+header, #header {
+	position: relative;
+}
+.ie7 #header {
+	z-index: 9999999 !important;
+}
+.container {
+	position: relative;
+	z-index: 1;
+}
+
+#headerContainer {
+	width: 965px;
+	margin: 0 auto;
+	padding: 10px 10px 10px 10px;
+	height: 39px;
+	position: relative;
+	z-index: 4;
+}
+/*-------------- Top Right Menu -----------------*/
+
+#topRightMenuNf {
+	float: right;
+	position: relative;
+	z-index:
+}
+
+	#topRightMenuNf > li {
+		float: left;
+		border-right: 1px solid #fff;
+		padding: 0 10px;
+	}
+
+		#topRightMenuNf > li.first {
+			position: relative;
+			top: -2px;
+		}
+
+		#topRightMenuNf > li.last,
+		#topRightMenuNf > li.first {
+			border-right: none;
+		}
+
+	#topRightMenuNf a:hover {
+		color: #F90;
+	}
+
+/*-------------- Language Drop Down --------------*/
+
+#flagMenuSelector {
+	position: relative;
+	width: 30px;
+	cursor: pointer;
+	color: #f90;
+}
+	#flagMenuSelector ul {
+		color: white;
+	}
+
+#arrowDown {
+	display: block;
+	position: absolute;
+	right: 8px;
+	top: 3px;
+	background: url(../images/sprite-pornhub-nf.png) -116px -136px no-repeat;
+	width: 8px;
+	height: 8px;
+}
+
+#flagWrapper {
+	position: absolute;
+	top: 14px;
+	left: -1px;
+	display: none;
+	background-color: #101010;
+	border: 1px solid #313131;
+	-webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+	.ie7 #flagWrapper {
+		width: 390px;
+		top: 12px;
+		left:-170px;
+	}
+	#flagMenuSelector:hover #flagWrapper  {
+		display: block;
+	}
+
+	.ie7 ul#flagWrapper li {
+		float: left;
+	}
+
+	#flagWrapper li a {
+		padding: 7px 16px;
+		text-align: left;
+		display: block;
+	}
+
+		#flagWrapper li a:hover {
+			background-color: #262626;
+		}
+
+.languageMarker {
+	display: none;
+}
+
+#idLanguage{
+	text-transform: uppercase;
+}
+
+/******************************************************************
+	Main Menu
+*******************************************************************/
+/*-------------- Main Menu Containers --------------*/
+
+#headerMenuContainer {
+	position: relative;
+	background: transparent url(../images/background-main-menu.png) repeat-x;
+	z-index:3;
+	height: 40px; /*disabled for campaign sds */
+}
+.logged-in #headerMenuContainer {
+	height: 80px; /*disabled for campaign ads */
+}
+	/* =================================================== */
+	/* FOR SKIN PUPOSES THIS CODE SHOULD BE COMMMENTED OUT */
+/*
+	.ie9 .logged-in #headerMenuContainer,
+	.ie8 .logged-in #headerMenuContainer,
+	.ie7 .logged-in #headerMenuContainer {
+		height: 75px;
+	}
+	.ie9 .logged-in #headerMenuContainer.hacked,
+	.ie8 .logged-in #headerMenuContainer.hacked,
+	.ie7 .logged-in #headerMenuContainer.hacked {
+		height: 300px;
+		margin-bottom: -225px;
+		z-index: 2;
+	}
+	.ie9 .logged-out #headerMenuContainer.hacked,
+	.ie8 .logged-out #headerMenuContainer.hacked,
+	.ie7 .logged-out #headerMenuContainer.hacked {
+		height: 185px;
+		margin-bottom: -145px;
+	}
+	*/
+	/* =================================================== */
+
+
+
+	#headerContainer .logo {
+		margin: 0 0 0 15px;
+		float: left;
+	}
+	#headerContainer .logo img {
+		height: 45px;
+		width: auto;
+	}
+
+#headerContainerInner {
+	border-top: 1px solid #343638;
+	border-bottom: 1px solid black;
+}
+
+#headerContainerDropShadow {
+	position: relative;
+	box-shadow-bottom: 0px 0px 20px 0px #000000;
+	-moz-box-shadow: 0px 0px 20px 0px #000000;
+	-webkit-box-shadow: 0px 0px 20px 0px #000000;
+	z-index: 3 !important;
+}
+
+#headerMainMenu {
+	/*position: relative;*/
+	width: 965px;
+	margin: auto;
+	height: 40px;
+	background: transparent url(../images/bg.png) repeat-x 0 0;
+	border-left: 1px solid black;
+	/*background: #4e5155;  Old browsers */
+	background: -moz-linear-gradient(top,  #4e5155 0%, #1b1b1b 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4e5155), color-stop(100%,#1b1b1b)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #4e5155 0%,#1b1b1b 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #4e5155 0%,#1b1b1b 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #4e5155 0%,#1b1b1b 100%); /* IE10+ */
+	background: linear-gradient(top,  #4e5155 0%,#1b1b1b 100%); /* W3C */
+	/**/ /* IE6-9 */
+}
+	:root *> #headerMainMenu {
+		/*z-index: 6000000;*/
+	}
+
+/*-------------- Main menu items --------------*/
+
+ul#headerMainMenu li.menu {
+	width: 10.7%;
+	display: block;
+	float: left;
+	position: static;
+	border-left: 1px solid #393a3b;
+	border-right: 1px solid black;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4e5155', endColorstr='#1b1b1b',GradientType=0 );
+}
+
+	.ie7 ul#headerMainMenu li.menu.item-3 {
+		border-left: 1px solid black;
+		margin-left: -1px;
+	}
+	.ie8 ul#headerMainMenu li.menu.item-5,
+	.ie9 ul#headerMainMenu li.menu.item-5 {
+		width: 11%;
+	}
+
+	.ie7 ul#headerMainMenu li.menu {width: 105px;
+		margin-left: 1px;
+		margin-right:-1px;}
+	.ie8 ul#headerMainMenu li.menu {width: 107px;}
+	.ie9 ul#headerMainMenu li.menu {width: 11%;}
+
+		ul#headerMainMenu li.item-5 a {
+			white-space: nowrap;
+		}
+ul#headerrMainMenu li.community {
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4e5155', endColorstr='#1b1b1b',GradientType=0 );
+	width: 135px;
+}
+ul#headerMainMenu li.menucommunity {
+	float: left;
+	border-right: 1px solid #393a3b;
+	overflow:visible;
+}
+ul#headerMainMenu li.community a {
+	width: 100%;
+}
+#communityTab {
+border-right: 1px solid black;
+}
+
+.ie8 #communityTab {
+border-right: none;
+}
+
+
+	html.language-it ul#headerMainMenu li.menucommunity #communityTab {
+		padding: 0 25px;
+		*padding: 12px 25px 0;
+		*width: 60%;
+		*height: 28px;
+	}
+	html.language-it.ie8 ul#headerMainMenu li.menucommunity #communityTab,
+	html.language-it.ie9 ul#headerMainMenu li.menucommunity #communityTab {
+		padding: 0 25px;
+	}
+
+	ul#headerMainMenu li.menucommunity #communityTab span {
+		margin-left: -20%;
+	}
+		html.language-it ul#headerMainMenu li.menucommunity #communityTab span {
+			margin-left: -30%;
+		}
+
+
+ul#headerMainMenu li a {
+	color: white;
+	font-size: 13px;
+	font-weight: bold;
+	text-transform: uppercase;
+	width: inherit;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0 10px;
+	height: 39px;
+	position: relative;
+	z-index: 2;
+}
+	.ie7 ul#headerMainMenu li a {
+		height: 15px;
+		padding: 12px;
+		float:left;
+		width: 79%;
+	}
+	.ie7 ul#headerMainMenu li.item-1 a {
+		height: 14px;
+	}
+	.ie7 ul#headerMainMenu li.item-5 a {
+		width: 84%;
+		padding-left: 8px;
+	}
+
+	.ie7.language-fr ul#headerMainMenu li.item-1 a,
+	.ie7.language-pl ul#headerMainMenu li.item-1 a,
+	.ie7.language-pl ul#headerMainMenu li.item-4 a,
+	.ie7.language-pt ul#headerMainMenu li.item-1 a  {
+		padding: 5px 10px 15px;
+	}
+	.ie7.language-es ul#headerMainMenu li.item-4 a,
+	.ie7.language-it ul#headerMainMenu li.item-1 a,
+	.ie7.language-it ul#headerMainMenu li.item-4 a,
+	.ie7.language-pt ul#headerMainMenu li.item-4 a,
+	.ie7.language-ru ul#headerMainMenu li.item-4 a {
+		padding: 5px 10px 19px;
+	}
+	html.language-fr ul#headerMainMenu li a,
+	html.language-pt ul#headerMainMenu li a,
+	html.language-pl ul#headerMainMenu li a,
+	html.language-ru ul#headerMainMenu li a {
+		font-size: 12px;
+		*padding: 12px 13px 12px 11px;
+	}
+	.ie7.language-fr ul#headerMainMenu li.item-1 a {
+		padding: 4px 13px 20px 11px;
+	}
+
+ul#headerMainMenu li a.active,
+ul#headerMainMenu li.menu a:hover {
+	text-decoration: none;
+	background: #404245; /* Old browsers */
+	background: -moz-linear-gradient(top,  #404245 1%, #151515 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#404245), color-stop(100%,#151515)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #404245 1%,#151515 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #404245 1%,#151515 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #404245 1%,#151515 100%); /* IE10+ */
+	background: linear-gradient(top,  #404245 1%,#151515 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#404245', endColorstr='#151515',GradientType=0 ); /* IE6-9 */
+}
+
+
+
+
+/*-------------- Search & Autocomplete --------------*/
+
+#headerMainMenu li.mainMenuSearch {
+	width: 205px;
+	width: 210px\9;
+	border: none;
+	float: right;
+	height: 40px;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4e5155', endColorstr='#1b1b1b',GradientType=0 );
+}
+	.ie7 ul#headerMainMenu li.mainMenuSearch {
+		width: 215px;
+		margin-left: 0;
+	}
+
+	.ie9 ul#headerMainMenu li.mainMenuSearch {
+		width: 208px;
+		margin-left: -3px;
+	}
+	.ie8 ul#headerMainMenu li.mainMenuSearch {
+		width: 202px;
+		margin-left: 0;
+	}
+
+#searchBarContainer {
+	position: relative;
+	width: 98%;
+	margin: auto;
+	z-index: 1;
+	height: 27px;
+	top: 6px;
+}
+
+#btnSearchContainer {
+	width: 33px;
+	height: 26px;
+	float: right;
+	position: relative;
+	-webkit-border-top-right-radius: 11px;
+	-webkit-border-bottom-right-radius: 11px;
+	-moz-border-radius-topright: 11px;
+	-moz-border-radius-bottomright: 11px;
+	border-top-right-radius: 11px;
+	border-bottom-right-radius: 11px;
+	background: #ffb648; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffb648 21%, #d68101 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(21%,#ffb648), color-stop(100%,#d68101)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffb648 21%,#d68101 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffb648 21%,#d68101 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffb648 21%,#d68101 100%); /* IE10+ */
+	background: linear-gradient(top,  #ffb648 21%,#d68101 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb648', endColorstr='#d68101',GradientType=0 ); /* IE6-9 */
+}
+
+	#btnSearchContainer:hover {
+		background: #ffc658; /* Old browsers */
+		background: -moz-linear-gradient(top,  #ffc658 21%, #e79215 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(21%,#ffc658), color-stop(100%,#e79215)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #ffc658 21%,#e79215 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #ffc658 21%,#e79215 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #ffc658 21%,#e79215 100%); /* IE10+ */
+		background: linear-gradient(top,  #ffc658 21%,#e79215 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc658', endColorstr='#e79215',GradientType=0 ); /* IE6-9 */
+		-webkit-border-top-right-radius: 11px;
+		-webkit-border-bottom-right-radius: 11px;
+		-moz-border-radius-topright: 11px;
+		-moz-border-radius-bottomright: 11px;
+		border-top-right-radius: 11px;
+		border-bottom-right-radius: 11px;
+	}
+
+	.ie9 #btnSearchContainer{
+		background: #ec9d27 url(../images/second-menu-gradient.svg) repeat-x 0 0;
+		filter: none;
+		border-top-right-radius: 11px;
+		border-bottom-right-radius: 11px;
+	}
+
+#btnSearch {
+	cursor: pointer;
+	border: medium none;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+}
+
+#searchInput {
+	display: block;
+	float: right;
+	border: medium none;
+	color: #333;
+	font-size: 14px;
+	width: 83%;
+	width: 76%\9;
+	height: 26px;
+	outline:none;
+	text-indent: 10px;
+	-webkit-border-top-left-radius: 11px;
+	-webkit-border-bottom-left-radius: 11px;
+	-moz-border-radius-topleft: 11px;
+	-moz-border-radius-bottomleft: 11px;
+	border-top-left-radius: 11px;
+	border-bottom-left-radius: 11px;
+}
+	.ie10 #searchInput {
+		width: 77%;
+		padding-left: 10px;
+	}
+	.ie9 #searchInput {
+		text-indent:0;
+		padding-left:10px;
+
+	}
+
+	.ie8 #searchInput,
+	.ie7 #searchInput {
+		text-indent:0;
+		padding: 5px 0 0 10px;
+		width: 74%;
+		height:21px;
+	}
+
+#btnIconWrapper {
+	width: 100%;
+	height: 100%;
+}
+
+#searchBarIcon {
+	position: absolute;
+	left: 9px;
+	top: 4px;
+	width: 15px;
+	height: 16px;
+	background: url(../images/sprite-pornhub-nf.png) no-repeat;
+	cursor:pointer;
+}
+
+.ui-autocomplete {
+	width: 212px !important;
+	/* prevent horizontal scrollbar */
+	margin: -20px 0 0 -40px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	float: left;
+	position: absolute !important;
+	border: 5px solid rgba(0,0,0,0.5);
+	border-top: none;
+	z-index: 2 !important;
+}
+ .ui-menu-item {
+	cursor: pointer;
+	background: white;
+}
+.ui-menu-item a {
+	font-size: 14px;
+	padding: 5px 5px 5px 15px;
+	padding: 5px 5px 5px 23px\9;
+	display: block;
+	color: black;
+}
+.ui-menu-item a:hover {
+	text-shadow: 1px 1px 2px #fdb352;
+	filter: dropshadow(color=#, offx=, offy=);
+}
+.ui-menu-item a:hover, .ui-menu-item a.ui-state-hover {
+	text-decoration: none;
+	cursor: pointer;
+	background: #ffb345; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffb345 0%, #d38103 83%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffb345), color-stop(83%,#d38103)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffb345 0%,#d38103 83%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffb345 0%,#d38103 83%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffb345 0%,#d38103 83%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffb345 0%,#d38103 83%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb345', endColorstr='#d38103',GradientType=0 ); /* IE6-9 */
+}
+
+
+/******************************************************************
+	Menu dropdowns (new overlay, January 2013)
+*******************************************************************/
+
+/* Hover states for "community" and "video" items ----------------*/
+ul#headerMainMenu li.menu a#communityTab,ul#headerMainMenu li.menu.item-2 > a {
+	fliter: none;
+}
+
+ul#headerMainMenu li.menu a#communityTab:hover,
+ul#headerMainMenu li.menu.item-2 > a:hover,
+ul#headerMainMenu li.menu > a.hovered {
+	background: #191919;
+	background: -moz-linear-gradient(top,  #1a1a1a 0%, #191919 50%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1a1a1a), color-stop(50%,#191919)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #1a1a1a 0%,#191919 50%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #1a1a1a 0%,#191919 50%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #1a1a1a 0%,#191919 50%); /* IE10+ */
+	background: linear-gradient(to bottom,  #1a1a1a 0%,#191919 50%); /* W3C */
+	filter: none;
+}
+
+ul#headerMainMenu li.menu a span.arrow {
+	width: 11px;
+	height: 6px;
+	display: block;
+	background: url(../images/bg_mainnav_dropdown.png) no-repeat;
+	position: absolute;
+	top: 17px;
+	right: 5px;
+}
+
+ul#headerMainMenu li.menucommunity #communityTab span.arrow {
+right: 4px;
+}
+.ie7 ul#headerMainMenu li.menu a span.arrow,
+.ie8 ul#headerMainMenu li.menu a span.arrow,
+.ie10 ul#headerMainMenu li.menu a span.arrow,
+.ie9 ul#headerMainMenu li.menu a span.arrow  {
+	right: 3px;
+}
+
+
+.ie7 ul#headerMainMenu li.menu.item-2 a span.arrow,
+.ie8 ul#headerMainMenu li.menu.item-2 a span.arrow,
+.ie10 ul#headerMainMenu li.menu.item-2 a span.arrow,
+.ie9 ul#headerMainMenu li.menu.item-2 a span.arrow {
+	right: 10px;
+}
+
+.firefox ul#headerMainMenu li.menu a span.arrow {
+	position: inherit;
+	top: inherit;
+	right: inherit;
+	float: right;
+margin: 5px 5px 0 0;
+}
+
+.firefox ul#headerMainMenu li.menu.item-2 a span.arrow {margin: 5px 0 0;  }
+.firefox ul#headerMainMenu li.menucommunity #communityTab span.arrow {
+	right: -10px;
+}
+.firefox.osx ul#headerMainMenu li.menu a span.arrow {
+	margin-right: 5px;
+}
+
+.firefox.osx ul#headerMainMenu li.menucommunity #communityTab span.arrow {
+	right:  -10px;
+}
+.wideDropdown {
+	position: absolute;
+	top: 38px;	left: 0;
+	width: 100%;
+	display: none;
+	border-top: 1px solid black;
+	border-bottom: 1px solid #333;
+	background: #191919;
+	background: rgba(26,26,26,0.98);
+}
+#btnCommunity:hover .wideDropdown,
+.menu.item-2:hover .wideDropdown {
+	display: block;
+}
+
+.ie7 #btnCommunity {
+	padding-right: 1px;
+}
+
+	.wideDropdown > ul {
+		width: 740px;
+		padding-right: 235px;
+		margin: 0 auto;
+	}
+	.ie7 .wideDropdown ul {
+		padding-right: 215px;
+		width: 753px;
+	}
+	.ie8 .wideDropdown ul{
+
+		padding-right: 195px;
+		width: 753px;
+	}
+	.ie9 .wideDropdown ul {
+		padding-right: 208px;
+		width: 753px;
+	}
+	.menu.item-2 .wideDropdown > ul {
+		margin: 0 auto;
+		width: 860px;
+		padding-right: 0;
+		padding-left: 105px;
+	}
+	.ie7 .menu.item-2 .wideDropdown > ul {
+		padding-bottom: 10px;
+	}
+	.ie8 .menu.item-2 .wideDropdown > ul,
+	.ie9 .menu.item-2 .wideDropdown > ul {
+		padding-left: 108px;
+		width: 857px;
+	}
+			 ul#headerMainMenu .wideDropdown li {
+				float: right;
+				margin: 10px 0 10px 30px;
+				position: relative;
+			}
+			ul#headerMainMenu .menu.item-2 .wideDropdown li {
+				float: left;
+				margin: 10px 30px 10px 0;
+			}
+
+			 ul#headerMainMenu .wideDropdown li a {
+				border: 1px solid #333;
+				width: 90px;
+				height: 83px;
+				cursor: pointer;
+				font-size: 0.8em;
+				text-transform: capitalize;
+				white-space: nowrap;
+			}
+			.wideDropdown li a:hover {
+				border: 1px solid white;
+			}
+			.ie7 ul#headerMainMenu .wideDropdown li a {
+
+				width: 83px;
+				height: 56px;
+			}
+			ul#headerMainMenu .wideDropdown li a:hover {
+				border: 1px solid white;
+				background: none;
+				filter: none;
+			}
+				.wideDropdown li span.icon {
+					width: 40px;
+					height: 39px;
+					display: block;
+					background: url(../images/bg_mainnav_dropdown.png) no-repeat 0 -48px;
+					margin: 0 27px 10px;
+					cursor: pointer;
+				}
+
+				/* Community -----------------------------------------------*/
+				.wideDropdown li.videos span.icon {
+					width: 54px;
+					background-position: -39px -48px;
+				}
+				.wideDropdown li.members span.icon {
+					width: 59px;
+					background-position: -93px -48px;
+				}
+				.wideDropdown li.photos span.icon {
+					width: 47px;
+					background-position: -154px -48px;
+				}
+					.wideDropdown li.communityHome:hover span.icon {
+						background-position: 0 -7px;
+					}
+					.wideDropdown li.videos:hover span.icon {
+						background-position: -39px -7px;
+					}
+					.wideDropdown li.members:hover span.icon {
+						background-position: -93px -7px;
+					}
+					.wideDropdown li.photos:hover span.icon {
+						background-position: -154px -7px;
+					}
+
+				/* Videos -----------------------------------------------*/
+				.menu.item-2 .wideDropdown li.playlist span.icon {
+					width: 55px;
+					margin: 7px auto 2px;
+					background-position: -2px -133px;
+				}
+				.menu.item-2 .wideDropdown li.topRated span.icon {
+					width: 40px;
+					background-position: -58px -130px;
+				}
+				.menu.item-2 .wideDropdown li.mostViewed span.icon {
+					width: 40px;
+					background-position: -98px -130px;
+				}
+				.menu.item-2 .wideDropdown li.mostRecent span.icon {
+					width: 39px;
+					background-position: -139px -130px;
+				}
+				.menu.item-2 .wideDropdown li.longest span.icon {
+					width: 38px;
+					margin: 4px auto 7px;
+					background-position: -180px -132px;
+				}
+					.menu.item-2 .wideDropdown li.playlist:hover span.icon {
+						background-position: -2px -93px;
+					}
+					.menu.item-2 .wideDropdown li.topRated:hover span.icon {
+						background-position: -58px -90px;
+					}
+					.menu.item-2 .wideDropdown li.mostViewed:hover span.icon {
+						background-position: -98px -90px;
+					}
+					.menu.item-2 .wideDropdown li.mostRecent:hover span.icon {
+						background-position: -139px -90px;
+					}
+					.menu.item-2 .wideDropdown li.longest:hover span.icon {
+						background-position: -180px -92px;
+					}
+
+
+/*
+
+				ul#headerMainMenu .wideDropdown li a {
+					text-transform: capitalize;
+					text-align: center;
+					font-weight: bold;
+					font-size: 10px;
+					display: block;
+					height: 25px;
+					padding: 0;
+					width: 100%;
+				}
+				ul#headerMainMenu .wideDropdown li a:hover {
+					background: none;
+					filter: none;
+				}
+*/
+				.ie9 .wideDropdown li a,
+				.ie8 .wideDropdown li a,
+				.ie7 .wideDropdown li a {
+					width: 105px;
+				}
+
+
+
+/******************************************************************
+	Secondary (Profile) Menu
+****************************************************************** */
+
+#profileMenu {
+	width: 965px;
+	margin: 10px auto 0;
+	height: 30px;
+	position: relative;
+	z-index: 1;
+}
+
+	#profileMenu ul {
+		display: block;
+		float: left;
+		overflow: hidden;
+		height: auto;
+		background: #FFB648;
+		background: -moz-linear-gradient(top, #FFB648 21%, #D68101 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(21%,#FFB648), color-stop(100%,#D68101));
+		background: -webkit-linear-gradient(top, #FFB648 21%,#D68101 100%);
+		background: -o-linear-gradient(top, #FFB648 21%,#D68101 100%);
+		background: -ms-linear-gradient(top, #FFB648 21%,#D68101 100%);
+		background: linear-gradient(top, #FFB648 21%,#D68101 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb648', endColorstr='#d68101',GradientType=0 );
+		-webkit-border-radius: 11px;
+		-moz-border-radius: 11px;
+		border-radius: 11px;
+		width: 680px;
+	}
+		.ie7 #profileMenu ul {
+			width: 71%;
+		}
+		.ie9 #profileMenu ul {
+			background: #ec9d27 url(../images/second-menu-gradient.svg) repeat-x 0 0;
+			background-size: 100% 100%;
+			filter: none;
+		}
+
+		.language-de #profileMenu ul,
+		.language-fr #profileMenu ul,
+		.language-es #profileMenu ul,
+		.language-it #profileMenu ul,
+		.language-pt #profileMenu ul,
+		.language-pl #profileMenu ul,
+		.language-ru #profileMenu ul {
+			width: 70%;
+		}
+
+
+			#profileMenu > ul li {
+				float: left;
+				width: 14%;
+				border-right: 1px solid #D78201;
+				border-left: 1px solid #FFB545;
+				text-align: center;
+				height: 30px;
+			}
+
+				.ie7 #profileMenu > ul li {
+					width: 11%;
+					height: 10px;
+					padding: 5px 10px 10px;
+				}
+
+				.ie8 #profileMenu > ul li {
+					height: 30px;
+				}
+						#profileMenu ul li.last {
+							border: none;
+							width: 14%;
+							margin-right: -20px;
+							float: left;
+						}
+
+						.ie7 #profileMenu ul li.last {
+							width: 9%;
+							margin-right: -25px;
+						}
+
+						#profileMenu > ul li:hover, #profileMenu ul li.active {
+							background: #ffc658; /* Old browsers */
+							background: -moz-linear-gradient(top,  #ffc658 21%, #e79215 100%); /* FF3.6+ */
+							background: -webkit-gradient(linear, left top, left bottom, color-stop(21%,#ffc658), color-stop(100%,#e79215)); /* Chrome,Safari4+ */
+							background: -webkit-linear-gradient(top,  #ffc658 21%,#e79215 100%); /* Chrome10+,Safari5.1+ */
+							background: -o-linear-gradient(top,  #ffc658 21%,#e79215 100%); /* Opera 11.10+ */
+							background: -ms-linear-gradient(top,  #ffc658 21%,#e79215 100%); /* IE10+ */
+							background: linear-gradient(top,  #ffc658 21%,#e79215 100%); /* W3C */
+							filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc658', endColorstr='#e79215',GradientType=0 ); /* IE6-9 */
+						}
+
+						#profileMenu > ul li#feedsTab {width: 11%;}
+						.ie7 #profileMenu > ul li#feedsTab {width: 10%;}
+						#profileMenu > ul li#favTab {width: 15%;}
+						#profileMenu > ul li#videosTab {width: 15%;}
+						.language-de #profileMenu > ul li#inboxTab {width: 18%;}
+						.language-de #profileMenu > ul li#feedsTab {width: 8%;}
+						.ie7.language-de #profileMenu > ul li#inboxTab {width: 11%;}
+						.ie7.language-fr #profileMenu > ul li#inboxTab a,
+						.ie7.language-es #profileMenu > ul li#inboxTab a,
+						.ie7.language-it #profileMenu > ul li#inboxTab a,
+						.ie7.language-pt #profileMenu > ul li#inboxTab a,
+						.ie7.language-es #profileMenu > ul li#feedsTab a {
+							display: block;
+							padding: 0;
+							margin-top: -7px;
+							width: 70px
+						}
+
+							#profileMenu > ul li a {
+								color: #111;
+								font-size: 12px;
+								font-weight: bold;
+								text-transform: uppercase;
+								vertical-align: middle;
+								display: table-cell;
+								height: 30px;
+								width: 100px;
+								padding: 0 4px;
+							}
+							#profileMenu > ul li a:hover {text-decoration: none;}
+							.ie7 #profileMenu > ul li a {
+								height: 5px;
+								padding: 4px;
+								margin: 0 -20px;
+								width: 125px;
+							}
+
+							.language-de #profileMenu > ul li a,
+							.language-fr #profileMenu > ul li a,
+							.language-es #profileMenu > ul li a,
+							.language-it #profileMenu > ul li a,
+							.language-pt #profileMenu > ul li a,
+							.language-pl #profileMenu > ul li a,
+							.language-ru #profileMenu > ul li a{
+								font-size: 11px;
+							}
+
+
+
+	#profileMenu #lyThSelector {
+		top:10px;	right:0;
+
+			margin: 0px 13px;
+	}
+
+
+
+
+/*************************************************************************
+	Found these in the common.css, moved... will clean up at a later time
+	since a lot of these styles are repeats. - Tay.
+**************************************************************************/
+
+
+#headerMenuContainer {
+	margin: 9px 0 0;
+	position: relative;
+	background: url(../images/background-main-menu.png) repeat-x;
+	*position: relative;
+	*z-index: 99999;
+}
+.header-container-dropshadow_wrap {
+	position: relative;
+	z-index: 11000;
+	box-shadow-bottom: 0px 0px 20px 0px #000000;
+	-moz-box-shadow: 0px 0px 20px 0px #000000;
+	-webkit-box-shadow: 0px 0px 20px 0px #000000;
+}
+
+
+
+html.language-it ul#headerMainMenu li.item-1 a, html.language-it ul#headerMainMenu li.item-4 a,
+html.language-fr ul#headerMainMenu li.item-1 a,
+html.language-pl ul#headerMainMenu li.item-1 a, html.language-pl ul#headerMainMenu li.item-4 a,
+html.language-pt ul#headerMainMenu li.item-1 a, html.language-es ul#headerMainMenu li.item-4 a {
+
+	*padding: 5px 10px 15px;
+}
+	html.language-fr ul#headerMainMenu li a,
+	html.language-pt ul#headerMainMenu li a,
+	html.language-pl ul#headerMainMenu li a,
+	html.language-ru ul#headerMainMenu li a {
+		font-size: 12px;
+		*padding: 12px 10px 7px;
+	}
