@@ -1,8 +1,10 @@
+<head>
 <link rel="stylesheet" href="./css/common.css?cache=2013021401" type="text/css" />
 <link rel="stylesheet" href="./css/header.css?cache=2013021401" type="text/css" />
 <link rel="stylesheet" href="./css/playlist.css?cache=2013020801" type="text/css" />
 <link rel="stylesheet" href="./css/community.css?cache=2013011201" type="text/css" />
 <link rel="stylesheet" href="./css/large.css?cache=2013021401" type="text/css" media="only screen and (min-width:1600px)" />
+<title><?php echo $title ?></title>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script type="text/javascript">
 	var $j = jQuery.noConflict();
@@ -49,3 +51,4 @@
 		}
 	}
 </script>
+</head>

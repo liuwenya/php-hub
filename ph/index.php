@@ -20,13 +20,15 @@ include_once('./head.php');
 ?>
 
 <?php
-$html = str_replace('target=""','target="_blank"',$html);
-
 echo '<h2>being_watched</h2>';
-echo str_replace('http://www.pornhub.com','.',$html->find('ul[id=being_watched]',0));
+$str_temp = str_replace('http://www.pornhub.com','.',$html->find('ul[id=being_watched]',0));
+$str_temp = str_replace('target=""','target="_blank"',$str_temp);
+echo $str_temp;
 
 echo '<h2>most_recent</h2>';
-echo str_replace('http://www.pornhub.com','.',$html->find('ul[class=videos row-5-thumbs]',0));
+$str_temp = str_replace('http://www.pornhub.com','.',$html->find('ul[class=videos row-5-thumbs]',0));
+$str_temp = str_replace('target=""','target="_blank"',$str_temp);
+echo $str_temp;
 ?>
 
 

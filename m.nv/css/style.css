@@ -1,0 +1,251 @@
+* { margin: 0; padding: 0;}
+body { background: #FFF;   font-family: Arial, Helvetica, sans-serif;  color: #333333; font-size: 12px; min-height: 100%; height: auto !important; height: 100%; position: absolute; }
+html, body { width: 100%; height: 100%;}
+ul { }
+img {border:0}
+a { color: #333333; }
+a:hover {  text-decoration: none; }
+.clear { clear: both; height: 0px; padding: 0px; margin: 0px; line-height: 0px; font-size: 0px;}
+.centermap {  width: 312px; margin: 0 auto;}
+
+
+
+/*head*/
+.head { height: 86px;}
+.logo { float: left; width: 150px; font-size: 0px;}
+.info { float: left; width: 162px; text-align: right;}
+.my { height: 26px; padding-top: 7px;}
+.my a { color: #6b6b6b;}
+
+.links a { background: url(http://static.nuvid.com/templates/frontend/mobile/images/links_a.gif) no-repeat; width: 66px; height: 26px; display: inline-block; text-align: center; margin-left: 9px; color: #FFF; font-weight: bold; text-decoration: none; padding-top: 8px;}
+/*head*/
+
+
+/*content*/
+.content { background: url(http://static.nuvid.com/templates/frontend/mobile/images/contentbg.gif) repeat-y;}
+.content.no_links {}
+.content_top { background: url(http://static.nuvid.com/templates/frontend/mobile/images/content_top.png) left top no-repeat;}
+.content.no_links .content_top {background-position:left -41px;}
+.content_foot { background: url(http://static.nuvid.com/templates/frontend/mobile/images/content_foot.gif) left bottom no-repeat;}
+.content_subfoot {padding:7px; margin-bottom:10px; font-size:14px;}
+.content_subfoot a {font-size:14px; color:#C1000B;}
+
+
+.links2 { height: 51px;}
+
+.info2 { padding-top: 29px; padding-top:10px;}
+.search { float: left; padding-left: 11px; width: 176px;}
+.inp { background: url(http://static.nuvid.com/templates/frontend/mobile/images/inp.gif) no-repeat; width: 119px; padding-left: 12px; padding-right: 34px; padding-top: 8px; padding-bottom: 8px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #6b6b6b;  border: none;}
+
+.go { position: absolute; margin-left: 131px; margin-top: 2px;}
+
+.category { float: left; width: 120px; padding-bottom: 29px;}
+.category p { background: url(http://static.nuvid.com/templates/frontend/mobile/images/select.gif) no-repeat; width: 116px; height: 23px; padding-left: 3px; padding-top: 7px;}
+.category select { background: none; border: none; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #6b6b6b; width: 115px;}
+
+.ban { font-size: 0px; text-align: center; padding-bottom: 15px; margin-left: 6px;}
+
+.tumbs {}
+.title { background: url(http://static.nuvid.com/templates/frontend/mobile/images/title.gif) top repeat-x; height: 27px; margin-left: 1px; margin-right: 1px; padding-left: 9px; padding-right: 13px; padding-top: 8px; margin-bottom: 16px;}
+.title h2 { font-size: 15px; color: #FFF; text-align: center; }
+.tumbs .title h2 { text-align: left;}
+.top { float: right;}
+
+.tumb { padding-bottom: 16px;}
+.video { float: left; padding-left: 6px; width: 170px; font-size: 0px;}
+.opis { float: left; width: 130px;}
+.opis  h4 { padding-bottom: 18px; font-weight: normal; }
+.opis p { padding-top: 6px;}
+.opis span { color: #999999; font-weight: bold;}
+
+.links3  { background: url(http://static.nuvid.com/templates/frontend/mobile/images/links3bg.gif) bottom center no-repeat; padding-bottom: 3px; text-align: center; padding-top: 10px;}
+.links3 a { background: url(http://static.nuvid.com/templates/frontend/mobile/images/links3_a.gif) no-repeat; width: 103px; height: 26px; text-align: center; color: #FFF; font-weight: bold; text-decoration: none; padding-top: 8px; display: inline-block;}
+.links3.long a {background-image:url(http://static.nuvid.com/templates/frontend/mobile/images/links3_a_long.jpg); width:151px;}
+
+.tumbs h3 { font-size: 15px; text-align: center; padding-top: 7px; padding-bottom: 29px;}
+.tumbs h3 a { color: #333333;}
+.tumbs h3 span a { color: #c1000b;}
+
+.player { text-align: center; width: 300px; margin: 0 auto;color: #999999; padding-bottom: 17px;}
+.player a { color: #999999; text-decoration: none;}
+.player p { padding-bottom: 2px;}
+
+.copy { text-align: center; height: 24px; padding-top: 10px;}
+.copy a { color: #c1000b;}
+/*content*/
+
+
+/*foot*/
+.foot { text-align: center; padding-top: 18px; padding-bottom: 19px; color: #999999;}
+.foot a {color: #999999; margin-left: 3px; margin-right: 3px;}
+/*foot*/
+
+
+
+/*category*/
+.str { text-align: center; padding-bottom: 30px; padding-top: 8px;}
+.str a { display: inline-block; position: relative; top: 5px;}
+.str span { font-size: 30px; font-weight: bold; display: inline-block; padding-left: 12px; padding-right: 12px;}
+.str span span { color: #999999; padding: 0px;}
+
+.inf { text-align: center; padding-bottom: 27px; padding-left: 70px;}
+.inp2 { background: url(http://static.nuvid.com/templates/frontend/mobile/images/inp2.gif) no-repeat; width: 112px; padding-left: 12px; padding-top: 8px; padding-bottom: 8px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #6b6b6b;  border: none; margin-right: 9px; float: left; margin-top: 2px;}
+.inf a { float: left;}
+/*category*/
+
+
+/*expired*/
+.user { text-align: left; padding-top: 15px; padding-left: 18px; color: #6b6b6b;}
+.user p { padding-top: 4px;}
+.user span { color: #c1000b;}
+.user a { color: #6b6b6b;}
+
+.title2 { background: url(http://static.nuvid.com/templates/frontend/mobile/images/title2.gif) bottom center no-repeat; color: #6b6b6b; font-size: 15px; text-align: center; padding-bottom: 20px;}
+.title3 { font-size: 15px; text-align: center; font-weight: bold; padding-top: 10px; padding-bottom: 12px;}
+.title4 { background: #e7e7e7; color: #6b6b6b; text-align: center; padding-top: 5px; padding-bottom: 5px;}
+
+.block {padding-top: 15px; padding-left: 9px; font-size: 12px;}
+.buy { background: url(http://static.nuvid.com/templates/frontend/mobile/images/buy.gif) no-repeat; width: 294px; height: 48px;  margin-bottom: 2px; color: #6b6b6b;}
+.buy2 { background: url(http://static.nuvid.com/templates/frontend/mobile/images/buy2.gif) no-repeat; width: 294px; height: 48px;  margin-bottom: 2px;}
+.buy3 { background: url(http://static.nuvid.com/templates/frontend/mobile/images/buy3.gif) no-repeat; width: 294px; height: 48px; margin-bottom: 2px; color: #6b6b6b;}
+.buy2 p { text-shadow: 1px 1px #FFF;}
+.chek { width: 26px; float: left; padding-left: 17px; padding-top: 18px;}
+.opis2 { width: 163px; float: left; }
+.price { width: 60px; float: left; text-align: right;}
+
+.tx { font-size: 18px; color: #333333; font-weight: bold; padding-top: 4px;}
+.tx2 { font-size: 18px; color: #c1000b; font-weight: bold; text-transform: uppercase; padding-top: 4px;}
+
+.button { background: url(http://static.nuvid.com/templates/frontend/mobile/images/button.gif) top repeat-x; height: 27px; width: 179px; display: block; color: #FFF; font-size: 15px; text-decoration: none; padding-top: 8px; font-weight: bold; text-align: center; margin: 0 auto; margin-top: 23px; margin-bottom: 24px;}
+/*expired*/
+
+
+/*join*/
+.button2 { background: url(http://static.nuvid.com/templates/frontend/mobile/images/button2.gif) top no-repeat; height: 27px; width: 90px; display: block; color: #FFF; font-size: 15px; text-decoration: none; padding-top: 8px; font-weight: bold; text-align: center; margin: 0 auto; margin-top: 23px; margin-bottom: 24px;}
+
+.forma { padding-left: 11px; color: #6b6b6b; padding-bottom: 9px;}
+.forma  p { padding-bottom: 11px;}
+.forma  .name { padding-left: 12px;  padding-bottom: 7px;}
+.inp3 { background: url(http://static.nuvid.com/templates/frontend/mobile/images/inp3.gif) no-repeat; width: 278px; padding-left: 12px; padding-top: 6px; padding-bottom: 6px; font-family: Arial, Helvetica, sans-serif; font-size: 15px; color: #333; border: none;}
+
+/*join*/
+
+
+/*login*/
+.link h3 { font-size: 15px; text-align: center; padding-bottom: 20px;}
+.link h3 a { color: #c1000b;}
+
+.inf2 { padding-left: 23px; color: #6b6b6b; padding-bottom: 35px;}
+.other { width: 186px; float: left;}
+.other p { padding-bottom: 4px;}
+.other a { color: #6b6b6b;}
+.send { float: left; width: 92px;}
+.send .button2 { margin: 0;}
+/*login*/
+
+
+/*preview*/
+.back a { background: url(http://static.nuvid.com/templates/frontend/mobile/images/back.gif) top no-repeat; height: 27px; width: 90px; display: block; color: #FFF; font-size: 15px; text-decoration: none; font-weight: bold; text-align: center; margin: 0 auto;  margin-bottom: 18px;}
+
+.info3 { padding-left: 18px;}
+.name2 { font-weight: bold; padding-bottom: 6px;}
+.name2.download {font-size:24px; text-align:center;}
+.info3 p { padding-top: 6px;}
+.info3 span { color: #999999; font-weight: bold;}
+.info3 td { padding-right: 24px; padding-bottom: 8px;}
+
+.foto { font-size: 0px; text-align: center; padding-top: 17px; padding-bottom: 10px;}
+.pad { padding-bottom: 16px;}
+/*preview*/
+
+
+/*preview*/
+.back a { background: url(http://static.nuvid.com/templates/frontend/mobile/images/back.gif) top no-repeat; height: 27px; width: 90px; display: block; color: #FFF; font-size: 15px; text-decoration: none; padding-top: 8px; font-weight: bold; text-align: center; margin: 0 auto;  margin-bottom: 18px;}
+
+.info3 { padding-left: 18px;}
+.name2 { font-weight: bold; padding-bottom: 6px;}
+.info3 p { padding-top: 6px;}
+.info3 span { color: #999999; font-weight: bold;}
+.info3 td { padding-right: 24px; padding-bottom: 8px;}
+
+.foto { font-size: 0px; text-align: center; padding-top: 17px; padding-bottom: 10px;}
+.pad { padding-bottom: 16px;}
+/*preview*/
+
+/*icon_menu_top*/
+
+.icon1,
+.icon2,
+.icon3,
+.icon4,
+.icon5 {
+	background:url(http://static.nuvid.com/templates/frontend/mobile/images/icon1.png) no-repeat top;
+	background-position:0 0;
+	height:21px;
+	width:62px;
+	display:block;
+	font-family:'Arial';
+	font-size:10px;
+	color:#333333;
+	text-decoration:none;
+	text-align:center;
+	padding-top:30px;
+	margin: 0;
+	float:left;
+}
+
+.icon2 {
+	width:63px;
+	background:url(http://static.nuvid.com/templates/frontend/mobile/images/icon2.png) no-repeat top;
+}
+
+.icon3 {
+	width:61px;
+	background:url(http://static.nuvid.com/templates/frontend/mobile/images/icon3.png) no-repeat top;
+}
+
+.icon4 {
+	width:63px;
+	background:url(http://static.nuvid.com/templates/frontend/mobile/images/icon4.png) no-repeat top right;
+}
+
+.icon5 {
+	width:63px;
+	background:url(http://static.nuvid.com/templates/frontend/mobile/images/icon5.png) no-repeat top;
+}
+
+.icon1:hover,
+.icon2:hover,
+.icon3:hover,
+.icon4:hover,
+.icon5:hover {
+	background-position:0 -51px;
+	color:#FFF;
+}
+
+.links2 a.current {
+	color:#FFF;
+	background-position:0 -51px !important;
+}
+
+.links4 { height: 31px; text-align:center;}
+.links4 a { font-size: 15px; text-decoration: none; font-weight: bold; text-align: center;}
+
+.downloader a, .downloader a:hover {
+    background: url(http://static.maximus.test.nuvid.com/templates/frontend/mobile/images/link_downloader.png) no-repeat;
+    background-color: #E6E6E6;
+    border: #CCC solid 1px;
+    width: 302px;
+    height: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #FFF;
+    text-decoration: none;
+    padding: 9px 0;
+    display: inline-block;
+    margin: 15px 0 0 4px;
+    font-size: 13px;
+}
+.downloader {
+    padding-bottom: 15px;
+}
