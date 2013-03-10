@@ -1,9 +1,21 @@
 <?php
-$menu = $html->find('div[class=sidebar]',0);
-foreach($menu->find('a') as $element){
-	$element->href = '?up='.$element->href;
-}
-echo $menu;
-echo '</div></div>';
-echo '<div class="footer"><p>Copyright ? 2012-2013 b2p, All Rights Reserved.</p></div>';
+	function replace_menu_label($content,$dom){
+		$menu = $dom->find('ul[class=menu]',0);
+		foreach($menu->find('a') as $element){
+			$element->href = '?up='.$element->href;
+		}
+
+		$content = str_replace('{$menu}',$menu,$content);
+
+		return $content;
+	}
+
+	$ft = fopen($menu_temp_file,"r");
+	if($ft){
+		$ftr = fread($ft,filesize($menu_temp_file));
+		$ftr = replace_menu_label($ftr,$html);
+
+		fclose ($ft);
+		echo $ftr;
+	}
 ?>
