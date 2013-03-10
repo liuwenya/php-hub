@@ -1,38 +1,4 @@
-﻿<?php
-include_once('../dom/simple_html_dom.php');
-include_once('./imgcache.php');
-
-$uh = 'http://www.nuvid.com';
-$mh = 'http://m.nuvid.com';
-$up = '';
-$u = $uh;
-$img = '';
-
-
-if(isset($_GET['u'])){
-	$up = urldecode($_GET['u']);
-	$u = $u.$up;
-}
-
-if(isset($_GET['t'])){
-	$title = urldecode($_GET['t']);
-}
-
-if(isset($_GET['img'])){
-	$img = urldecode($_GET['img']);
-}
-
-$p = explode('/',$up);
-$p = $p[2];
-$vu = $uh.'/embed/'.$p;
-$mu = $mh.'/download/'.$p;
-
-
-
-$mhtml = file_get_html($mu);
-$mp4 = $mhtml->find('div[class=pad]',0)->find('a',0)->href;
-?>
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh-Hans">
     
     <head>
@@ -46,12 +12,22 @@ $mp4 = $mhtml->find('div[class=pad]',0)->find('a',0)->href;
         <h2>
             video 1
         </h2>
-        <div class="player" data-engine="flash">
-            <video style="display:block;width:520px;height:330px"  controls="controls" width="500" height="500" poster="<?echo $img ?>">
-                <source src="<?php echo $mp4; ?>"
+        <div>
+            <!--每个video都需要有一个单独的parentNode，即每个video外面都有个div或者p等等。为了兼容IE876-->
+            <video controls="controls" width="640" height="352" poster="http://www.laikabase.de/cp_view/images/userfiles/slideshows/19_thumb_Shift_Image1.jpg"
+            autoplay="autoplay">
+                <source src="http://www.laikabase.de/videos/Shift.mp4" type="video/mp4"
+                />
+            </video>
+        </div>
+        <h2>
+            video 2
+        </h2>
+        <div>
+            <video controls="controls" width="500" height="500" poster="http://i782.photobucket.com/albums/yy104/stevenk0519/th_cow.jpg">
+                <source src="http://i782.photobucket.com/albums/yy104/stevenk0519/cow.mp4"
                 type="video/mp4" />
             </video>
-
         </div>
         <script type="text/javascript">
             var config = {
@@ -59,7 +35,7 @@ $mp4 = $mhtml->find('div[class=pad]',0)->find('a',0)->href;
                     "type": "video/mp4"
                 },
                 "flash": {
-                    "player_uri": "../play/flowplayer-3.2.16.swf",
+                    "player_uri": "http://www.happyelements.cn/wp-content/themes/happyelements/flash/flowplayer-3.2.7.swf",
                     "need_version": "10,0,0,0",
                     "autoBuffering": true,
                     "html_when_no_flash": "<a target=\"_blank\" href=\"http://www.adobe.com/go/getflash\"><img height=\"39\" width=\"158\" src=\"http://www.adobe.com/images/shared/download_buttons/get_adobe_flash_player.png\" alt=\"Get Adobe Flash player\" /></a>"
@@ -148,4 +124,5 @@ $mp4 = $mhtml->find('div[class=pad]',0)->find('a',0)->href;
             }
         </script>
     </body>
+
 </html>

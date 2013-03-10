@@ -45,7 +45,7 @@ foreach($html->find('div[class=block-tumb]',0)->find('div') as $belement){
 		$title = $element->find('a',0)->title;
 		$remark = $element->find('div[class=box]',0);
 		$href = $element->find('a',0)->href;
-		$href = 'view.php?u='.urlencode($href).'&t='.urlencode($title);
+		$href = 'view.php?u='.urlencode($href).'&t='.urlencode($title).'&img='.$src;
 		
 
 		echo '<a href="'.$href
