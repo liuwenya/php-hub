@@ -24,10 +24,6 @@ include_once('./common.php');
             	<p>© 2011-2013 <a href="." title="<?php echo $title ?>"><?php echo $title ?></a> - Fresh Mobile Porn!</p>
             </div>
 </div></div></div>
-        <div class="foot">
-        	<a href="./terms.php" title="">Terms and Conditions</a>   |   <a href="./dmca.php" title="">DMCA</a>   |   
-        	<a href="./privacy.php" title="">Privacy Policy</a>  
-        </div>
         
     </div>
 </body>

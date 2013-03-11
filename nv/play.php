@@ -2,11 +2,12 @@
 
 	function replace_play_label($content,$dom,$img,$vtitle){
 		$mp4 = $dom->find('div[class=pad]',0)->find('a',0)->href;
-		$script = '<script>document.getElementById("mpurl").src="'.$mp4.'";</script>';
+		//$script = '<script>document.getElementById("mpurl").src="'.$mp4.'";</script>';
 
 		$content = str_replace('{$img}',$img,$content);
+		$content = str_replace('{$mps}',$mp4,$content);
 		$content = str_replace('{$vtitle}',$vtitle,$content);
-		$content = $content.$script;
+		//$content = $content.$script;
 
 		return $content;
 	}

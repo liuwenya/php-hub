@@ -9,13 +9,24 @@
 
 		return $content;
 	}
+	
+	if(!cache_valid($menu_cache_file,$cache_valid_time)){
+		$fc = fopen($menu_cache_file,"w");
+		if($fc){
+			$menu = '';
+			$ft = fopen($menu_temp_file,"r");
+			if($ft){
+				$ftr = fread($ft,filesize($menu_temp_file));
+				$ftr = replace_menu_label($ftr,$html);
 
-	$ft = fopen($menu_temp_file,"r");
-	if($ft){
-		$ftr = fread($ft,filesize($menu_temp_file));
-		$ftr = replace_menu_label($ftr,$html);
-
-		fclose ($ft);
-		echo $ftr;
+				fclose($ft);
+				$menu = $ftr;
+			}
+			fwrite($fc,$menu);
+			fclose($fc);
+		}
 	}
+
+	include_once($menu_cache_file);
+
 ?>

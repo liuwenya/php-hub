@@ -6,13 +6,24 @@
 
 		return $content;
 	}
+	
+	if(!cache_valid($head_cache_file,$cache_valid_time)){
+		$fc = fopen($head_cache_file,"w");
+		if($fc){
+			$head = '';
+			$ft = fopen($head_temp_file,"r");
+			if($ft){
+				$ftr = fread($ft,filesize($head_temp_file));
+				$ftr = replace_head_label($ftr,$html,$lu,$lt);
 
-	$ft = fopen($head_temp_file,"r");
-	if($ft){
-		$ftr = fread($ft,filesize($head_temp_file));
-		$ftr = replace_head_label($ftr,$html,$lu,$lt);
+				fclose ($ft);
 
-		fclose ($ft);
-		echo $ftr;
+				$head = $ftr;
+			}
+			fwrite($fc,$head);
+			fclose($fc);
+		}
 	}
+
+	include_once($head_cache_file);
 ?>
